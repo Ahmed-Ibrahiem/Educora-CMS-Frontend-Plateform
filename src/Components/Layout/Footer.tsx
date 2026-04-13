@@ -6,15 +6,27 @@ const Footer = () => {
   const footer_links = [
     {
       title: "Company",
-      menu: ["About", "Contact Us", "News and Blogs"],
+      menu: [
+        { name: "About", to: "/about" },
+        { name: "Contact Us", to: "/contact" },
+      ],
     },
     {
       title: "Community",
-      menu: ["Documentation", "Faq", "Forum", "Sitemap"],
+      menu: [
+        { name: "Documentation", to: "" },
+        { name: "Faq", to: "" },
+        { name: "Forum", to: "" },
+        { name: "Sitemap", to: "" },
+      ],
     },
     {
       title: "Teaching",
-      menu: ["Become a teacher", "How to guide", "Terms & Conditions"],
+      menu: [
+        { name: "Become a teacher", to: "" },
+        { name: "How to guide", to: "" },
+        { name: "Terms & Conditions", to: "" },
+      ],
     },
   ];
   return (
@@ -56,13 +68,15 @@ const Footer = () => {
                 {section.menu.map((link, index1) => {
                   return (
                     <li
-                      className="elements-row gap-2.5 text-[16px] hover:translate-x-2.5 duration-500 group/link"
+                      className=" text-[16px] hover:translate-x-2.5 duration-500 group/link"
                       key={index1}
                     >
-                      <i className="fa-solid fa-caret-right text-secondary"></i>
-                      <span className="opacity-70 group-hover/link:opacity-100! duration-100! cursor-pointer ">
-                        {link}
-                      </span>
+                      <Link to={link.to} className="elements-row gap-2.5">
+                        <i className="fa-solid fa-caret-right text-secondary"></i>
+                        <span className="opacity-70 group-hover/link:opacity-100! duration-100! cursor-pointer ">
+                          {link.name}
+                        </span>
+                      </Link>
                     </li>
                   );
                 })}
