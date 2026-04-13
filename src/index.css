@@ -246,7 +246,7 @@
 
   .quote_end::after {
     content: "\f10e";
-    font-family: "Font Awesome 6 Free";
+    font-family: "Font Awesome 7 Free";
     font-weight: 900;
     font-size: 25px;
     position: absolute;
@@ -319,7 +319,7 @@
 
   .our-input-style::after {
     content: "\f00c";
-    font-family: "Font Awesome 6 Free";
+    font-family: "Font Awesome 7 Free";
     font-weight: 900;
     scale: 0;
     rotate: 360deg;
@@ -604,7 +604,7 @@ button {
 
 .our_checkbox::after {
   content: "\f00c";
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 7 Free";
   font-weight: 900;
   width: 20px;
   height: 20px;
@@ -653,7 +653,7 @@ Styling of hero section swiper-button navigation
 .hero_section_area .swiper-button-prev::after,
 .hero_section_area .swiper-button-next::after {
   content: "\f177" !important;
-  font-family: "Font Awesome 6 Free" !important;
+  font-family: "Font Awesome 7 Free" !important;
   font-weight: 600 !important;
   font-size: 22px;
   color: var(--color-white);
